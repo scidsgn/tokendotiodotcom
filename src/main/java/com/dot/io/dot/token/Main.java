@@ -48,7 +48,7 @@ public class Main {
 
         setupCallback(client, member);
 
-        redirectToUrl(genereateRedirectUrl(client, member));
+        redirectToUrl(generateRedirectUrl(client, member));
     }
 
     private void setupCallback(TokenClient client, Member member) {
@@ -214,7 +214,7 @@ public class Main {
         return member;
     }
 
-    private String genereateRedirectUrl(TokenClient client, Member member) {
+    private String generateRedirectUrl(TokenClient client, Member member) {
         String refId = generateNonce();
 
         TokenRequest request =
